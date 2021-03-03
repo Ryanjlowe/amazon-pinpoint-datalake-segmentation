@@ -627,7 +627,7 @@ Resources:
                     "TopicArn": "${SNSTopicArn}",
                     "Message": {
                       "Message": "Segmentation Query Successful",
-                      "Result.$": "$.ImportOutput"
+                      "Result.$": "$.ResponseFormatted"
                     },
                     "Subject": "Amazon Pinpoint Segmentation Query Successful",
                     "MessageAttributes": {
@@ -646,7 +646,7 @@ Resources:
                     "TopicArn": "${SNSTopicArn}",
                     "Message": {
                       "Message": "Query Failed",
-                      "Result.$": "$.ResponseFormatted"
+                      "Result.$": "$"
                     },
                     "Subject": "Amazon Pinpoint Segmentation Query Failed",
                     "MessageAttributes": {
